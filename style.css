@@ -1,0 +1,40 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Hover */
+    --Very-Dark-cyan: hsl(157, 53%, 16%);
+
+    /* Fonts */
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+.attribution {
+    font-size: 1.6rem;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: var(--Very-Dark-cyan);
+}
+
+.attribution a:hover {
+    color: var(--Dark-cyan);
+}
