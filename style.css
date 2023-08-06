@@ -8,33 +8,122 @@
 
 :root {
     /* Primary */
-    --Dark-cyan: hsl(158, 36%, 37%);
-    --Cream: hsl(30, 38%, 92%);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
 
     /* Neutral */
-    --Very-dark-blue: hsl(212, 21%, 14%);
-    --Dark-grayish-blue: hsl(228, 12%, 48%);
-    --White: hsl(0, 0%, 100%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
 
     /* Hover */
-    --Very-Dark-cyan: hsl(157, 53%, 16%);
 
     /* Fonts */
+    /* font-family: "Big Shoulders Display", cursive; */
+    font-family: "Lexend Deca", sans-serif;
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card:nth-child(1) {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.cards .card {
+    padding: 50px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    color: white;
+}
+
+.cards .card .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.card h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4rem;
+}
+
+p {
+    line-height: 2.5rem;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    transition:box-shadow, color, background 0.3s;
+}
+
+.card:nth-child(1) button {
+    color: var(--bright-orange);
+}
+
+.card:nth-child(2) button {
+    color: var(--dark-cyan);
+}
+
+.card:nth-child(3) button {
+    color: var(--very-dark-cyan);
+}
+
+.card button:hover {
+    color: white;
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px white;
+    transition:box-shadow, color, background 0.3s;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .attribution {
     font-size: 1.6rem;
     text-align: center;
-    position: fixed;
-    bottom: 10px;
 }
 
 .attribution a {
-    color: var(--Very-Dark-cyan);
+    color: var(--very-dark-cyan);
 }
 
 .attribution a:hover {
-    color: var(--Dark-cyan);
+    color: var(--dark-cyan);
 }
